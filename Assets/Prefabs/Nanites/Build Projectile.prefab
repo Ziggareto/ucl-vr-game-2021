@@ -146,3 +146,5 @@ MonoBehaviour:
     type: 3}
   buildingSegment: {fileID: 7961965945139813475, guid: ba7cd969e5fa91745b723ded3bea1563,
     type: 3}
+  cyberbuilding: {fileID: 812953171044662743, guid: e76e1136ccca706429e6a21bf38282e7,
+    type: 3}

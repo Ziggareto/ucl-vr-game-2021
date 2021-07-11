@@ -29,13 +29,13 @@ public class GameManager : MonoBehaviour{
     myScoreManager = FindObjectOfType<ScoreManager>();
 	feedbackUI = GameObject.Find("Feedback UI").GetComponent<TextMeshProUGUI>();
 	feedbackUI.text = "";
-    scoreUI = GameObject.Find("Score UI").GetComponent<TextMeshProUGUI>();
-	scoreUI.text = "";
+    //scoreUI = GameObject.Find("Score UI").GetComponent<TextMeshProUGUI>();
+	//scoreUI.text = "";
 	InitialiseScene();
     }
 
     void Update() {
-        scoreUI.text = "Time Since Loaded : " + Time.timeSinceLevelLoad + "\nHigh Score: " + myScoreManager.highscore;
+        //scoreUI.text = "Time Since Loaded : " + Time.timeSinceLevelLoad + "\nHigh Score: " + myScoreManager.highscore;
     }
 
     public void Restart(){ // Replace with Athina's function

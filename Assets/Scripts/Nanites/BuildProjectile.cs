@@ -7,14 +7,26 @@ public class BuildProjectile : MonoBehaviour
 
     public GameObject buildingParent;
     public GameObject buildingSegment;
+    public GameObject cyberbuilding;
 
-    void OnCollisionEnter(Collision collision)
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    string colliderName = collision.gameObject.name;
+    //    if (colliderName != "Gun" && colliderName != "Player")
+    //    {
+    //        Build();
+    //        GameObject.Find("Gun").SendMessage("AddSegments", -49);
+    //        Destroy(gameObject);
+    //    }
+    //}
+
+
+    void Update()
     {
-        string colliderName = collision.gameObject.name;
-        if (colliderName != "Gun" && colliderName != "Player")
+        if (transform.position.y < 200f)
         {
-            Build();
-            GameObject.Find("Gun").SendMessage("AddSegments", -49);
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+            Instantiate(cyberbuilding, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

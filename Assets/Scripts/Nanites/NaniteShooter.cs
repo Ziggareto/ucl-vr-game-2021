@@ -26,7 +26,7 @@ public class NaniteShooter : MonoBehaviour
     private void Start()
     {
         cooldownCounter = 0;
-        segmentBank = 0;
+        segmentBank = 999999999;
         noActiveCloud = false;
     }
 
@@ -41,9 +41,17 @@ public class NaniteShooter : MonoBehaviour
             if (currentProjectile != 0 || segmentBank >= 49)
             {
                 Shoot();
+                if (currentProjectile == 0)
+                {
+                    cooldownCounter = -10f;
+                }
+                else
+                {
+                    cooldownCounter = 0;
+                }
             }
 
-            cooldownCounter = 0;
+            //cooldownCounter = 0;
         }
     }
 

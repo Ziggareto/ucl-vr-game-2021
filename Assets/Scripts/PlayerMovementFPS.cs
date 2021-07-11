@@ -41,7 +41,8 @@ public class PlayerMovementFPS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        //isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        isGrounded = GetComponent<CharacterController>().isGrounded;
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f; //"Set to zero" but actually force player to indeed hit the bottom

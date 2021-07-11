@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fbf752ef2a4b08438c6c70b3a47c9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  teleportKey: 324
   range: 50
 --- !u!114 &5812512828076883858
 MonoBehaviour:
@@ -311,27 +312,6 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
---- !u!114 &1439303076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7066247325810234970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 508e36668dd9aa446abddb95bfc1330b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootKey: 110
-  switchProjectile: 109
-  cooldown: 0.3
-  currentProjectile: 1
-  projectilePrefabs:
-  - {fileID: 3171844568938827554, guid: 9b70d2b81da61384da804e66cbff601a, type: 3}
-  - {fileID: 7638290415175367660, guid: 782765bb94eddb54da6c833d84913016, type: 3}
-  segmentBank: 0
-  noActiveCloud: 0
 --- !u!114 &1355726178895288727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,6 +326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   switchProjectile: 113
   reloadKey: 101
+  shootGunKey: 323
   currentProjectile: 0
   projectilePrefabs:
   - {fileID: 2395040347495949364, guid: a38711b258c8f7f4fbb7c3c14bbb4326, type: 3}
